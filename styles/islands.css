@@ -1,0 +1,135 @@
+:root {
+    --green: #074817;
+    --white: #ffffff;
+  font-family: "Raleway", sans-serif;
+}
+
+body, header, main, footer, section, article, aside {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+main, header, nav ul, footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: lightgray;
+
+}
+
+main section {
+    border: solid white 1px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+/* the following classes will govern the section and make them work within the grid */
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.pic6, .pic4, .pic2 {
+    background-image: url(../images/sj-020.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.pic2 {
+    background-image: url(../images/sj-007.jpg);
+}
+
+.pic4 {
+    background-image: url(../images/sj-043.jpg);
+}
+
+.item7 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.item8, .item9, .item10, .hero-orcas {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* styling elements */
+
+header {
+    background-color: var(--white);
+    text-align: center;
+}
+
+header a, header p, nav a {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+.hero-orcas, main section {
+    background-image: url(../images/sj-034.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+h1 {
+    color: var(--white);
+    text-transform: uppercase;
+    text-shadow: #074817 3px 3px 3px;
+}
+nav ul {
+    background-color: var(--white);
+
+}
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    height: 100px;
+}
+
+nav ul li:hover {
+    background-color: lightgray;
+    color: var(--white);
+}
+
+main section {
+    height: 400px;
+}
+
+.item1 {
+    background-image: url(../images/sj-005.jpg);
+}
+
+.item3 {
+    background-image: url(../images/sj-030.jpg);
+}
+
+.item5 {
+    background-image: url(../images/sj-013.jpg);
+}
+
+.item7 {
+    background-image: url(../images/sj-050.jpg);
+}
+
+.item2, .item4, .item6 {
+    background-image: none;
+}
+
+
+
+
+
+
+
+
