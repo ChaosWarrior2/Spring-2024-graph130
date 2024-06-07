@@ -1,7 +1,9 @@
 :root {
+    --blue: #11467D;
     --green: #074817;
     --white: #ffffff;
   font-family: "Raleway", sans-serif;
+  color:var(--blue);
 }
 
 body, header, main, footer, section, article, aside {
@@ -26,7 +28,7 @@ main section {
 }
 
 /* the following classes will govern the section and make them work within the grid */
-.item1 {
+.item1, .item8 {
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -69,8 +71,15 @@ header {
     text-align: center;
 }
 
+.logo1 {
+    height: 100px;
+    width: auto;
+    margin: 10px auto;
+
+}
+
 header a, header p, nav a {
-    color: lightgrey;
+    color:  var(--blue);
     text-decoration: none;
 }
 
@@ -98,7 +107,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color: lightgray;
+    background-color: var(--green);
     color: var(--white);
 }
 
@@ -126,7 +135,9 @@ main section {
     background-image: none;
 }
 
-
+footer {
+    padding: 5px;
+}
 
 
 
