@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.page-title p {
+    font-size: 22px;
+    margin: 8px;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    list-style: none;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+        .nav, main, footer, article, main ul, nav ul {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: 8px 16px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    nav a {
+        border: 0px;
+    }
+
+    .pure-u-1-2 {
+        width: 100%;
+    }
+    .z-shape {
+        background-image: none
+    }
+
+    .welcome {
+        padding: 5em 1.3em;
+    }
+    
+
+    .amber h2, .amber p {
+        width: 100%;
+    }
+    h1 {
+        font-size: 2em;
+        text-align: right;
+    }
+
+    .amber {
+        padding: 100px 0 150px 20px;
+    }
+
+    .marla h2 {
+        padding-left: 60px;
+    }
+    
+    header h2 {
+        text-align: right;
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 3em;
+        text-transform: capitalize;
+    }
+    
+    p {
+        font-size: 1.0em;
+        line-height: 1.0em;
+    }
+
+    .marla p {
+        text-align: center;
+        font-size: 1em;
+        padding: 100px;
+        /* background-color: white; */
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: 30px auto;
+    }
+
+    .core h3 {
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    .core h4, footer h2 {
+        font-size: 2.0em;
+    }
+    
+}
